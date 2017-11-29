@@ -1,0 +1,17 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        Languages
+    </div>
+    <div class='panel-body'>
+        <div class='table-responsive'>
+            <div ng-if="!$ctrl.languages.length" class="alert alert-danger">
+                Languages not available for this repo
+            </div>
+            <ul>
+                <li ng-repeat="language in $ctrl.languages">
+                   {{language}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
